@@ -4,7 +4,7 @@ UniFi Video is end-of-life and not supported anymore by Ubiquiti. But if you rea
 
 This is a fork of [pducharme/UniFi-Video-Controller](https://github.com/pducharme/UniFi-Video-Controller).
 
-- Changed base image from `phusion/baseimage:0.11` to `ghcr.io/linuxserver/baseimage-ubuntu:bionic`.
+- Changed base image from `phusion/baseimage:0.11` to `phusion/baseimage:bionic-1.0.0-amd64`.
 - Changed the mitigation method from disguising log4j v2.17.0 as v2.1.0 to [removing the JndiLookup class from the classpath](https://logging.apache.org/log4j/2.x/security.html#log4j-2-x-mitigation-3) of the included log4j v2.1.0 in UniFi Video.
 - Various other small fixes and optimizations.
 - Maybe someday I'll update the Dockerfile for S6 overlay support and better permission and ownership control.
