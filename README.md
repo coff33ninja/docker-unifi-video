@@ -74,7 +74,7 @@ docker run -d \
   --tmpfs /var/cache/unifi-video \
   --cap-add DAC_READ_SEARCH \
   --restart unless-stopped \
-  snoopdoge90/unifi-video:latest
+  coff33ninja/unifi-video:latest
 ```
 
 ### Compose example
@@ -85,7 +85,7 @@ Adjust and/or create the local paths (`local-path:container-path`) to their desi
 version: '3'
 services:
   unifi-video:
-    image: snoopdoge90/unifi-video:latest
+    image: coff33ninja/unifi-video:latest
     container_name: unifi-video
     ports:
       - 6666:6666
