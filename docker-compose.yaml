@@ -1,7 +1,7 @@
 version: '3'
 services:
   unifi-video:
-    image: vuhuy/unifi-video:latest
+    image: coff33ninja/unifi-video:latest
     container_name: unifi-video
     ports:
       - 6666:6666
